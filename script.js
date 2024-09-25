@@ -53,8 +53,7 @@ submitBtn.addEventListener('click', function () {
 againBtn.addEventListener('click', function () {
   // Resets everything so that the user can start the game again and aim for better score :)
   displayMessage('Start guessing...');
-  const guess = document.querySelector('.guess');
-  guess.value = '';
+  document.querySelector('.guess').value = '';
   score.textContent = 20;
   body.style.backgroundColor = '#222';
   secretNumberElement.style.width = '15rem';
